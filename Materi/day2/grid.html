@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content {
+            display:grid;
+            column-gap: 10px;
+            margin-bottom: 20px;
+            grid-row: 10px;
+        }
+        .content div {
+            background-color: aqua;
+            padding: 30px;
+            border: 1px solid black;
+        }
+        @media (max-width: 480px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 481px) {
+            .content {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- grid two dimensional -->
+     
+
+    <div class="content">
+        <div>kotak1</div>
+        <div>kotak2</div>
+        <div>kotak3</div>
+    </div>
+</body>
+</html>
